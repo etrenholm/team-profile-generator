@@ -27,6 +27,12 @@ test("gets manager's email address", () => {
     expect(manager.getEmail()).toBe('jane@gmail.com')
 });
 
+test("gets manager's office number", () => {
+    const manager = new Manager('Jane','1','jane@gmail.com','1');
+
+    expect(manager.getNumber()).toBe('1')
+});
+
 test("gets manager's role or job title", () => {
     const manager = new Manager('Jane','1','jane@gmail.com','1');
 
