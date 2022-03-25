@@ -3,6 +3,8 @@ const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 
+const employees = []
+
 function App() {}
 
 // prompt to enter the team manager's name, ID, email address, and office number
@@ -32,7 +34,7 @@ App.prototype.addManager = function() {
             }
         ])
         .then(({ name, id, email, officeNumber  }) => {
-            this.manager = new Manager(name, id, email, officeNumber);
+            employees.push(new Manager(name, id, email, officeNumber))
 
             this.addEmployee();
         })
@@ -74,6 +76,7 @@ App.prototype.addEmployee = function() {
                     })
             } else {
                 console.log("Your HTML has been written!")
+                console.log(employees)
                 //return this.writePage()
             }
         })
@@ -107,7 +110,7 @@ App.prototype.addEngineer = function() {
         }
     ])
     .then(({ name, id, email, gitHub }) => {
-        this.engineer = new Engineer(name, id, email, gitHub);
+        employees.push(new Engineer(name, id, email, gitHub))
 
         // Then go back to menu
         this.addEmployee();
@@ -142,10 +145,10 @@ App.prototype.addIntern = function() {
         }
     ])
     .then(({ name, id, email, school }) => {
-        this.intern = new Intern(name, id, email, school);
+        employees.push(new Intern(name, id, email, school))
 
         // Then go back to menu
-        this.addEmloyee();
+        this.addEmployee();
     })
 }
 

@@ -26,6 +26,7 @@ Project was updated using:
 * CSS
 * JavaScript
 * Node.js
+* Jest
 * Terminal
 * Git
 * GitHub
