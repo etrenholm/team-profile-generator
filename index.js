@@ -2,6 +2,8 @@ const inquirer = require('inquirer')
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
+const fs = require('fs');
+const generateFile = require('./src/page-template.js')
 
 const employees = []
 
@@ -76,8 +78,7 @@ App.prototype.addEmployee = function() {
                     })
             } else {
                 console.log("Your HTML has been written!")
-                console.log(employees)
-                //return this.writePage()
+                return this.writePage(employees)
             }
         })
     }
@@ -150,6 +151,11 @@ App.prototype.addIntern = function() {
         // Then go back to menu
         this.addEmployee();
     })
+}
+
+App.prototype.writePage = function() {
+    console.log("worked")
+    fs.writeFileSync('./dist/index.html', generateFile(employees))
 }
 
 
