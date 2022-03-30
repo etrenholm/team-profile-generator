@@ -1,8 +1,12 @@
 
 const generateCards = employees => {
+
+    let employeeCards = ''
+
     for(let i = 0; i < employees.length; i++) {
+        console.log(i)
         if(employees[i].getRole() === "Manager") {
-            return `
+            employeeCards += `
             <div class="card">
             <div class="card-header">
                 <h2><i class="fa-solid fa-briefcase"></i>${employees[i].name}</h2>
@@ -23,7 +27,7 @@ const generateCards = employees => {
             `
         } 
         else if(employees[i].getRole() === "Engineer") {
-            return `
+            employeeCards += `
             <div class="card">
             <div class="card-header">
                 <h2><i class="fa-solid fa-glasses"></i>${employees[i].name}</h2>
@@ -37,14 +41,14 @@ const generateCards = employees => {
                     <p>Email: <a href="mailto:${employees[i].getEmail()}">${employees[i].getEmail()}</a></p>
                 </div>
                 <div class="card-info-section">
-                    <p>GitHub Profile: <a href="https://github.com/${employees[i].getGithub()}" target="_blank">https://github.com/${employees[i].getGithub()}</p>
+                    <p>GitHub Profile: <a href="https://github.com/${employees[i].getGithub()}" target="_blank">https://github.com/${employees[i].getGithub()}</a></p>
                 </div>
             </div>
         </div>
         `
         }
         else if(employees[i].getRole() === "Intern") {
-            return `
+            employeeCards += `
             <div class="card">
             <div class="card-header">
                 <h2><i class="fa-solid fa-graduation-cap"></i>${employees[i].name}</h2>
@@ -65,6 +69,7 @@ const generateCards = employees => {
         `
         }
     }
+    return employeeCards
 }
 
 module.exports = employees => {

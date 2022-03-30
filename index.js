@@ -154,7 +154,6 @@ App.prototype.addIntern = function() {
 }
 
 App.prototype.writePage = function() {
-    console.log("worked")
     fs.writeFileSync('./dist/index.html', generateFile(employees))
 }
 
