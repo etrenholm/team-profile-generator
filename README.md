@@ -51,10 +51,10 @@ Project was updated using:
 * Created an HTML template and CSS Styles
 
 ### STEP 4. - CREATE FUNCTIONALITY
-* Created prompt functionality using inquirer that gathered user input and pushed new objects into an array
-* Generate the new file with input data and write the file to the appropriate file path
+* Used inquirer to prompt questions, gather user input, and push new objects into an array
+* Used the File System module to generate the new file with user input data and write the file to the appropriate file path
 * Created a function which exported the entire page and returned HTML template
-* Used and for loop to iterate through user input data and an if statement to return appropriate card HTML depending on user input data
+* Iterated through user input data and used an if statement return appropriate HTML cards for Manager, Engineer, or Intern.
 
 ### STEP 5. - FINALIZE
 * Made various commits throughout process to save progress
@@ -62,7 +62,7 @@ Project was updated using:
 * Made tweaks and finished README.md
 
 ## Results
-* [Video Link]
+* [Video Link](https://drive.google.com/file/d/1GlBgLokaqhxv8rOMBAhlfELiEGDGq6NP/view)
 * [GitHub Repository](https://github.com/etrenholm/team-profile-generator)
 
 ![mockup]()

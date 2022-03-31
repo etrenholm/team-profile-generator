@@ -18,21 +18,53 @@ App.prototype.addManager = function() {
                 type: 'input',
                 name: 'name',
                 message: "What is the team manager's name?",
+                validate: nameInput => {
+                    if (nameInput) {
+                        return true
+                    } else {
+                        console.log("Please enter the team manager's name.")
+                        return false
+                    }
+                }
             },
             {
                 type: 'input',
                 name: 'id',
-                message: "What is the team manager's employee ID number?"
+                message: "What is the team manager's employee ID number?",
+                validate: idInput => {
+                    if (idInput) {
+                        return true
+                    } else {
+                        console.log("Please enter an ID number.")
+                        return false
+                    }
+                }
             },
             {
                 type: 'input',
                 name: 'email',
-                message: "What is the team manager's email address?"
+                message: "What is the team manager's email address?",
+                validate: emailInput => {
+                    if (emailInput) {
+                        return true
+                    } else {
+                        console.log("Please enter an email address.")
+                        return false
+                    }
+                }
             },
             {
                 type: 'input',
                 name: 'officeNumber',
-                message: "What is the team manager's office number?"
+                message: "What is the team manager's office number?",
+                validate: officeNumberInput => {
+                    if (officeNumberInput) {
+                        return true
+                    } else {
+                        console.log("Please enter an office number.")
+                        return false
+                    }
+                }
             }
         ])
         .then(({ name, id, email, officeNumber  }) => {
@@ -93,21 +125,53 @@ App.prototype.addEngineer = function() {
             type: 'input',
             name: 'name',
             message: "What is the engineer's name?",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true
+                } else {
+                    console.log("Please enter the engineer's name.")
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'id',
-            message: "What is the engineer's employee ID number?"
+            message: "What is the engineer's employee ID number?",
+            validate: idInput => {
+                if (idInput) {
+                    return true
+                } else {
+                    console.log("Please enter an ID number.")
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: "What is the engineer's email address?"
+            message: "What is the engineer's email address?",
+            validate: emailInput => {
+                if (emailInput) {
+                    return true
+                } else {
+                    console.log("Please enter an email address.")
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'gitHub',
-            message: "What is the engineer's gitHub username?"
+            message: "What is the engineer's GitHub username?",
+            validate: githubInput => {
+                if (githubInput) {
+                    return true
+                } else {
+                    console.log("Please enter a GitHub username.")
+                    return false
+                }
+            }
         }
     ])
     .then(({ name, id, email, gitHub }) => {
@@ -128,21 +192,53 @@ App.prototype.addIntern = function() {
             type: 'input',
             name: 'name',
             message: "What is the intern's name?",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true
+                } else {
+                    console.log("Please enter the intern's name.")
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'id',
-            message: "What is the intern's employee ID number?"
+            message: "What is the intern's employee ID number?",
+            validate: idInput => {
+                if (idInput) {
+                    return true
+                } else {
+                    console.log("Please enter an ID number.")
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: "What is the intern's email address?"
+            message: "What is the intern's email address?",
+            validate: emailInput => {
+                if (emailInput) {
+                    return true
+                } else {
+                    console.log("Please enter an email address.")
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'school',
-            message: "What school does the intern attend?"
+            message: "What school does the intern attend?",
+            validate: schoolInput => {
+                if (schoolInput) {
+                    return true
+                } else {
+                    console.log("Please enter a school.")
+                    return false
+                }
+            }
         }
     ])
     .then(({ name, id, email, school }) => {
