@@ -4,7 +4,6 @@ const generateCards = employees => {
     let employeeCards = ''
 
     for(let i = 0; i < employees.length; i++) {
-        console.log(i)
         if(employees[i].getRole() === "Manager") {
             employeeCards += `
             <div class="card">
