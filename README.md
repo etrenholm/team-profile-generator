@@ -26,6 +26,7 @@ Project was updated using:
 * CSS
 * JavaScript
 * Node.js
+* Inquirer
 * Jest
 * Terminal
 * Git
@@ -33,7 +34,7 @@ Project was updated using:
 
 ## References
 * [Inquirer Node Package](https://www.npmjs.com/package/inquirer)
-* [Jest](https://jestjs.io/docs/getting-started)
+* [Jest](https://www.npmjs.com/package/jest)
 * [File System Module](https://nodejs.org/api/fs.html#file-system)
 
 ## Process
@@ -62,10 +63,13 @@ Project was updated using:
 * Made tweaks and finished README.md
 
 ## Results
-* [Video Link](https://drive.google.com/file/d/1GlBgLokaqhxv8rOMBAhlfELiEGDGq6NP/view)
+* [Video Link](https://drive.google.com/file/d/1a3WcIQL2oTx0smjCx1-rtt6yvmD6i35_/view)
 * [GitHub Repository](https://github.com/etrenholm/team-profile-generator)
 
-![mockup]()
+![mockup](assets/demo.gif)
+
+### Output Example
+![mockup](assets/screenshot.png)
 
 ## Credit
 Erica Trenholm: https://github.com/etrenholm
