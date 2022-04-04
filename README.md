@@ -17,7 +17,7 @@ Create a command-line application that a manager can use to generate a team prof
 To install this application, type “npm install" in the command line.
 
 ## Usage
-To run this application and generate your readme, type "node index.js" in the command line.
+To run this application and generate your team profile, type "node index.js" in the command line.
 
 ## Technologies
 Project was updated using:
@@ -41,7 +41,7 @@ Project was updated using:
 ### STEP 1. - SETUP
 * Created GitHub Repository with a unique name.
 * Pushed first commit of files into the new Repo using Git.
-* Organized folder and fil directory structure.
+* Organized folder and file directory structure.
 
 ### STEP 2. - CREATE CLASSES
 * Created Employee, Manager, Engineer, and Intern objects which contained constructor properties and methods
